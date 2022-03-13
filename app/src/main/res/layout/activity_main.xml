@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/opencv_tutorial_activity_surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X: 0, Y: 0"
+        android:textColor="@color/background_material_light"
+        android:id="@+id/touch_coordinates" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/touch_coordinates"
+        android:text="HEX Color: "
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:textColor="@color/background_material_light"
+        android:id="@+id/touch_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/touch_color"
+        android:text="RGB Color: "
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:textColor="@color/background_material_light"
+        android:id="@+id/touch_color2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/touch_color2"
+        android:text=" ▄▄"
+        android:textStyle="bold"
+        android:textSize="60sp"
+        android:textColor="@color/background_material_light"
+        android:id="@+id/square"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="SAVE SLOT 1"
+        android:layout_marginTop="139dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="23dp"
+        android:text="SAVE SLOT 2" />
+
+    <TextView
+        android:id="@+id/red2"
+        android:layout_width="86dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="51dp"
+        android:background="@color/background_floating_material_light"
+        android:hint="R"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/blue2"
+        android:layout_width="86dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="197dp"
+        android:layout_marginBottom="51dp"
+        android:background="@color/background_floating_material_light"
+        android:hint="B"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/green2"
+        android:layout_width="86dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginBottom="51dp"
+        android:background="@color/background_floating_material_light"
+        android:hint="G"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/red1"
+        android:layout_width="86dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="167dp"
+        android:background="@color/background_floating_material_light"
+        android:hint="R"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/green1"
+        android:layout_width="86dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginBottom="167dp"
+        android:background="@color/background_floating_material_light"
+        android:hint="G"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/blue1"
+        android:layout_width="86dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="197dp"
+        android:layout_marginBottom="167dp"
+        android:background="@color/background_floating_material_light"
+        android:hint="B"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/delta"
+        android:layout_width="66dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="328dp"
+        android:layout_marginBottom="99dp"
+        android:text="ΔE="
+        android:textColor="#FFFFFF"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/delta_number"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="409dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="101dp"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/opencv_tutorial_activity_surface_view"
+        android:text="Coded by Igor Magalhaes Alves"
+        android:textColor="@color/background_material_light"
+        android:textSize="12sp" />
+
+</RelativeLayout>
